@@ -13,7 +13,7 @@
 <!-- Head -->
 <head>
 
-<title>New York Weather Widget A Flat Responsive Widget Template :: w3layouts</title>
+<title>MyLocate Weather Widget, Real time weather information based on user location</title>
 
 <!-- For-Mobile-Apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -29,7 +29,9 @@
 <link href='//fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Raleway:100,200' rel='stylesheet' type='text/css'>
 <!-- //Web-Fonts -->
-
+<!-- favicon -->
+<link rel="shortcut icon" type="image/jpg" href="images/weather_icon.jpg"/>
+<!-- favicon -->
 </head>
 <!-- Head -->
 
@@ -41,7 +43,7 @@
 
 
 	<!-- Heading -->
-	<h1>NEW YORK WEATHER WIDGET</h1>
+	<h1>MYLOCATE WEATHER WIDGET</h1>
 	<!-- //Headng -->
 
 
@@ -52,8 +54,8 @@
 			<!-- City -->
 			<div class="city">
 				<div class="title">
-					<h2>New York City</h2>
-					<h3>NEW YORK</h3>
+					<h2 class = 'city-title'>New York City</h2>
+					<h3 class = 'country'>NEW YORK</h3>
 				</div>
 				<div class="date-time">
 					<div class="dmy">
@@ -78,7 +80,7 @@
 						</div>
 					</div>
 					<div class="temperature">
-						<p>20°<span>C</span></p>
+						
 					</div>
 					<div class="clear"></div>
 				</div>
@@ -93,7 +95,7 @@
 					<img src="images/forecast.png" alt="New York Weather Widget">
 				</div>
 				<div class="today-weather">
-					<h3>Cloudy</h3>
+					<h3 class="weather-name">Cloudy</h3>
 					<ul>
 						<li>Now <span> 20°C</span></li>
 						<li>09:00 <span> 22°C</span></li>
@@ -128,6 +130,8 @@
 	<!-- Custom-JavaScript-Files -->
 
 		<!-- Time-JavaScript -->
+
+		<script src="./script.js"></script>
 		<script>
 			function startTime() {
 				var today = new Date();
