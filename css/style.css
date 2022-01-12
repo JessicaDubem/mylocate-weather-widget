@@ -38,8 +38,9 @@
 
 /*-- Index-Page-Styling --*/
 
+
 body {
-	background: url("../images/background.jpg");
+	background: url("../images/pexels-eberhard-grossgasteiger-844297.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center;
@@ -49,6 +50,7 @@ body {
 	-o-background-size: cover;
 	font-family: 'Open Sans', sans-serif;
 	text-align: center;
+	text-shadow: 2px 2px  black;
 }
 
 body a {
@@ -63,10 +65,11 @@ body a {
 h1 {
 	font-size: 50px;
 	font-weight: 400;
-	color: #F9F9F9;
+	color:white;
 	font-family: 'Oxygen', sans-serif;
 	letter-spacing: 7px;
 	margin-top: 50px;
+	text-shadow: 4px 4px 2px black;
 }
 
 .container {
@@ -78,7 +81,8 @@ h1 {
 .city {
 	width: 60%;
 	float: left;
-	background: url("../images/city.jpg");
+	background: url("../images/pexels-artem-saranin-1496373.jpg");
+	backdrop-filter:blur;
 	background-repeat: no-repeat;
 	background-size: cover;
 	-webkit-background-size: cover;
@@ -86,6 +90,8 @@ h1 {
 	-o-background-size: cover;
 	min-height: 500px;
 	position: relative;
+	height: 548.5px;
+	
 }
 
 .title {
@@ -97,6 +103,7 @@ h1 {
 .title h2 {
 	color: #FFF;
 	font-size: 30px;
+	text-shadow: 6px 6px 3px black;
 }
 
 .title h3 {
@@ -223,14 +230,14 @@ div#txt {
 	.container {
 		width: 55%;
 	}
-	.temperature p {margin-top:50px;}
+	/* .temperature p {margin-top:50px;} */
 }
 
 @media screen and (max-width: 1280px) {
 	.container {
 		width: 60%;
 	}
-	.temperature p {margin-top:50px;}
+	/* .temperature p {margin-top:50px;} */
 }
 
 @media screen and (max-width: 1024px) {
