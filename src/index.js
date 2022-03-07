@@ -19,24 +19,21 @@ const position = () => {
 
 fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&units=imperial&appid=${apiKey}`)
 .then(resolve => {
-    console.log('connected to the api');
     const weather = resolve.json;
     return resolve.json();
 })
 .then(data => {
-    console.log(data)
     updateUi(data);
 })
 .catch(error => {
     console.log(`Can't connect to API because ${error}`);
 });
-// api request to openweather 3 hour forecast API to be used in ul
+
 fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${long}&units=imperial&appid=${apiKey}`)
 .then(resolve => {
     return resolve.json();
 })
 .then(data => {
-    // console.log(data);
     listFunc(data);
 })
 .catch(error => {
@@ -52,7 +49,6 @@ fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${long}&u
 position();
 function updateUi(test){
     let data = test;
-    // console.log(data);
     const temperature = test.main.temp;
     const feelsLike = test.main.feels_like;
     const pressure = test.main.pressure;
@@ -93,7 +89,6 @@ function updateUi(test){
     //This is the function to ouput the second api to the dom
 function listFunc(forecast){
     let data = forecast;
-    // console.log(data);
 //problem is how to iterate through the forecast to dynamically output the forecast to the dom
     
 }
